@@ -12,13 +12,13 @@ body {
 
 /*Header/nav bar*/
 .logo {
-	max-width: 40px;
+  max-width: 40px;
 }
 
 .top-nav {
   display: flex;
   justify-content: center;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -34,74 +34,74 @@ body {
 
 .nav-item a:hover {
   border-bottom: 4px solid rgb(0, 165, 255);
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .projects h2,
 .contact h2 {
-	font-weight: 700;
+  font-weight: 700;
   margin: 20px auto;
 }
 
 /*Title section*/
 .jumbotron {
   background-color: rgb(40, 40, 40);
-	margin: 0;
-	color: rgb(255, 255, 255);
+  margin: 0;
+  color: rgb(255, 255, 255);
 }
 
 .title h1 {
-	font-weight: 700;
+  font-weight: 700;
   font-size: 4em;
 }
 
 .title h2 {
-	margin: 0;
-	font-weight: 700;
+  margin: 0;
+  font-weight: 700;
 }
 
 /*About section*/
 .about {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	flex-wrap: wrap;
-	margin: 40px auto 20px;
-	width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 40px auto 20px;
+  width: 50%;
 }
 
 .about p {
-	font-size: 1.3em;
-	text-align: left;
+  font-size: 1.3em;
+  text-align: left;
 }
 
 i {
-	color: rgb(255, 255, 255);
-	transition: transform 0.5s;
+  color: rgb(255, 255, 255);
+  transition: transform 0.5s;
 }
 
 i:hover {
-	color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   transform: scale(1.4,1.4);
 }
 
 .profile-pic {
   max-width: 150px;
-	border-radius: 50%;
-	margin-bottom: 15px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 /*Projects section*/
 .projects {
-	padding: 20px;
-	background-color: rgb(230, 230, 230);
+  padding: 20px;
+  background-color: rgb(230, 230, 230);
 }
 
 .projects .row {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .project {
@@ -169,6 +169,6 @@ footer {
   border-top: 1px solid rgb(160, 160, 160);
   margin-top: 20px;
   padding: 10px;
-	color: rgb(255, 255, 255);
-	background-color: rgb(40, 40, 40);
+  color: rgb(255, 255, 255);
+  background-color: rgb(40, 40, 40);
 }
