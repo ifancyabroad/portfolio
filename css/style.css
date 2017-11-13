@@ -111,6 +111,7 @@ i:hover {
 }
 
 .thumbnail {
+  padding: 0;
   width: 100%;
   transition: 0.5s;
 }
@@ -118,6 +119,7 @@ i:hover {
 .view-more {
   color: black;
   background-color: white;
+  box-shadow: 1px 1px 2px rgb(80, 80, 80);
   transition: 0.5s;
   position: absolute;
   width: 80%;
@@ -125,7 +127,7 @@ i:hover {
   right: 0;
   left: 0;
   margin: auto;
-  padding: 8px 16px;
+  padding: 8px 0;
 }
 
 h3 {
