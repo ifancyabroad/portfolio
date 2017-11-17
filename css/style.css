@@ -119,7 +119,8 @@ i:hover {
 .view-more {
   color: black;
   background-color: white;
-  box-shadow: 1px 1px 2px rgb(80, 80, 80);
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px rgb(80, 80, 80);
   transition: 0.5s;
   position: absolute;
   width: 80%;
