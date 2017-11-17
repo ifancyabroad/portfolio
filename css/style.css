@@ -145,12 +145,16 @@ h3 {
 
 /*Contact section*/
 input {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 form {
   max-width: 60%;
   margin: 20px auto;
+}
+
+textarea {
+	resize: none;
 }
 
 .social-media {
