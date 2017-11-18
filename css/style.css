@@ -37,12 +37,18 @@ body {
   text-decoration: none;
 }
 
-.skills h2,
-.projects h2,
-.contact h2 {
+.subtitle {
   font-size: 2.6em;
   font-weight: 700;
   margin: 20px auto;
+  border-bottom: 4px solid rgb(120, 120, 120);
+  width: 30%;
+  min-width: 200px;
+  transition: 0.5s;
+}
+
+.subtitle:hover {
+  width: 70%;
 }
 
 /*Title section*/
@@ -110,8 +116,13 @@ i:hover {
 	margin: 20px 10px;
 }
 
-.logo img {
-	width: 60%
+.logo:hover .skill-icon {
+	transform: rotateY(90deg);
+}
+
+.skill-icon {
+	width: 60%;
+	transition: 0.5s;
 }
 
 /*Projects section*/
@@ -120,10 +131,10 @@ i:hover {
   background-color: rgb(240, 240, 240);
 }
 
-.projects .row {
+.project-gallery {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project {
