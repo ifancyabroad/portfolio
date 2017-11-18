@@ -112,12 +112,21 @@ i:hover {
 }
 
 .logo {
+	position: relative;
 	width: 30%;
 	margin: 20px 10px;
 }
 
-.logo:hover .skill-icon {
-	transform: rotateY(90deg);
+.info {
+	position: absolute;
+	width: 150px;
+	top: 20%;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: -1;
+	opacity: 0;
+	transition: 0.5s
 }
 
 .skill-icon {
@@ -212,4 +221,14 @@ footer {
   padding: 10px;
   color: rgb(255, 255, 255);
   background-color: rgb(40, 40, 40);
+}
+
+@media screen and (min-width: 630px) {
+  .logo:hover .skill-icon {
+    transform: rotateY(90deg);
+  }
+
+  .logo:hover .info {
+    opacity: 1;
+  }
 }
