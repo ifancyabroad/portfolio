@@ -30,6 +30,7 @@ body {
 .nav-item a {
   color: rgb(0, 0, 0);
   transition: border-bottom 0.2s;
+  -webkit-transition: border-bottom 0.2s;
 }
 
 .nav-item a:hover {
@@ -45,6 +46,7 @@ body {
   width: 30%;
   min-width: 200px;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 
 .subtitle:hover {
@@ -88,11 +90,13 @@ body {
 i {
   color: rgb(255, 255, 255);
   transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
 }
 
 i:hover {
   color: rgb(255, 255, 255);
   transform: scale(1.4,1.4);
+  -webkit-transform: scale(1.4,1.4);
 }
 
 .profile-pic {
@@ -126,12 +130,14 @@ i:hover {
 	margin: auto;
 	z-index: -1;
 	opacity: 0;
-	transition: 0.5s
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
 }
 
 .skill-icon {
 	width: 60%;
 	transition: 0.5s;
+	-webkit-transition: 0.5s;
 }
 
 /*Projects section*/
@@ -156,6 +162,7 @@ i:hover {
   padding: 0;
   width: 100%;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 
 .view-more {
@@ -163,7 +170,6 @@ i:hover {
   background-color: white;
   border-radius: 2px;
   box-shadow: 1px 1px 4px rgb(80, 80, 80);
-  transition: 0.5s;
   position: absolute;
   width: 80%;
   top: 85%;
@@ -171,10 +177,12 @@ i:hover {
   left: 0;
   margin: auto;
   padding: 8px 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 
 h3 {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .project:hover .thumbnail {
@@ -183,6 +191,7 @@ h3 {
 
 .project:hover .view-more {
   transform: translateY(-60%);
+  -webkit-transform: translateY(-60%);
 }
 
 /*Contact section*/
@@ -196,17 +205,19 @@ form {
 }
 
 textarea {
-	resize: none;
+  resize: none;
 }
 
 .social-media {
   max-width: 50px;
   border-radius: 50%;
   transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
 }
 
 .social-media:hover {
   transform: scale(1.2,1.2);
+  -webkit-transform: scale(1.2,1.2);
 }
 
 .btn-submit {
@@ -226,6 +237,7 @@ footer {
 @media screen and (min-width: 630px) {
   .logo:hover .skill-icon {
     transform: rotateY(90deg);
+	-webkit-transform: rotateY(90deg);
   }
 
   .logo:hover .info {
