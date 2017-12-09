@@ -29,8 +29,6 @@ body {
 
 .nav-item a {
   color: rgb(0, 0, 0);
-  transition: border-bottom 0.2s;
-  -webkit-transition: border-bottom 0.2s;
 }
 
 .nav-item a:hover {
