@@ -234,8 +234,7 @@ footer {
 
 @media screen and (min-width: 630px) {
   .logo:hover .skill-icon {
-    transform: rotateY(90deg);
-	-webkit-transform: rotateY(90deg);
+    opacity: 0;
   }
 
   .logo:hover .info {
