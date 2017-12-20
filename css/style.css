@@ -111,14 +111,15 @@ i:hover {
 
 .logo {
 	position: relative;
-	width: 30%;
+	width: 35%;
 	margin: 20px 10px;
 }
 
 .info {
+	font-size: 0.9em;
 	position: absolute;
 	width: 150px;
-	top: 20%;
+	top: 10%;
 	right: 0;
 	left: 0;
 	margin: auto;
@@ -222,7 +223,11 @@ footer {
   background-color: rgb(40, 40, 40);
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 700px) {
+	.logo {
+		width: 25%;
+	}
+	
   .logo:hover .skill-icon {
     opacity: 0;
   }
