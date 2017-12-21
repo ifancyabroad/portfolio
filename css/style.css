@@ -11,10 +11,6 @@ body {
 }
 
 /*Header/nav bar*/
-.udacity-logo {
-  max-width: 40px;
-}
-
 .top-nav {
   display: flex;
   justify-content: center;
@@ -146,10 +142,6 @@ i:hover {
 	margin: 20px auto;
 }
 
-.flip-container:hover .project {
-	transform: rotateY(180deg);
-}
-
 .project {
   position: relative;
   height: 100%;
@@ -179,8 +171,13 @@ i:hover {
   padding: 15px;
 }
 
-h3 {
-  font-size: 1.2em;
+.tag {
+	font-size: 0.9em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
 }
 
 /*Contact section*/
@@ -228,11 +225,21 @@ footer {
 		width: 25%;
 	}
 	
-  .logo:hover .skill-icon {
-    opacity: 0;
-  }
+	.logo:hover .skill-icon {
+		opacity: 0;
+	}
 
-  .logo:hover .info {
-    opacity: 1;
-  }
+	.logo:hover .info {
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.about {
+		min-width: 500px;
+	}
+	
+	.flip-container:hover .project {
+		transform: rotateY(180deg);
+	}
 }
