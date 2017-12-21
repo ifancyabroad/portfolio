@@ -147,7 +147,7 @@ i:hover {
 	height: 100%;
 	width: 100%;
 	transform-style: preserve-3d;
-	transition: 0.5s;
+	transition: transform 0.5s;
 	box-shadow: 2px 2px 8px 2px rgb(140, 140, 140);
 }
 
@@ -160,7 +160,6 @@ i:hover {
 }
 
 .view-more {
-	color: white;
 	background-color: rgb(40, 40, 40);
 	position: absolute;
 	top: 0;
@@ -169,9 +168,11 @@ i:hover {
 	transform: rotateY(180deg);
 	backface-visibility: hidden;
 	padding: 15px;
+	display: none;
 }
 
 .tag {
+	color: white;
 	font-size: 0.9em;
 	position: absolute;
 	top: 50%;
@@ -241,5 +242,9 @@ footer {
 	
 	.flip-container:hover .project {
 		transform: rotateY(180deg);
+	}
+	
+	.view-more {
+		display: block;
 	}
 }
