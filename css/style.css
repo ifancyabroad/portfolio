@@ -10,29 +10,11 @@ body {
 	font-weight: 300;
 }
 
+a {
+	text-decoration: none !important;
+}
+
 /*Header/nav bar*/
-.top-nav {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	list-style: none;
-	margin: 0;
-}
-
-.nav-item {
-	font-size: 1.5em;
-	margin: 20px;
-}
-
-.nav-item a {
-	color: rgb(0, 0, 0);
-}
-
-.nav-item a:hover {
-	border-bottom: 4px solid rgb(0, 165, 255);
-	text-decoration: none;
-}
-
 .subtitle {
 	font-size: 2.6em;
 	font-weight: 700;
@@ -50,49 +32,56 @@ body {
 
 /*Title section*/
 .jumbotron {
+	background-image: url('../images/title-background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-color: rgb(40, 40, 40);
-	margin: 0;
 	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 0;
 }
 
-.title h1 {
-	font-weight: 700;
-	font-size: 4em;
+.title {
+	background-color: rgba(40, 40, 40, 0.8);
+	height: 36em;
 }
 
-.title h2 {
-	margin: 0;
-	font-weight: 700;
+.title-titles {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-/*About section*/
-.about {
-	margin: 40px auto 20px;
-	width: 50%;
-	min-width: 300px;
+.title-links {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.about p {
-	font-size: 1.3em;
-	text-align: left;
+.links-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style: none;
 }
 
-i {
-	color: rgb(255, 255, 255);
-	transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
+.links-item {
+	color: white;
+	margin: 10px;
+	padding: 5px;
+	border: 2px solid #888;
+	border-radius: 20px;
+	width: 100px;
+	transition: 0.7s;
 }
 
-i:hover {
-	color: rgb(255, 255, 255);
-	transform: scale(1.4,1.4);
-	-webkit-transform: scale(1.4,1.4);
-}
-
-.profile-pic {
-	max-width: 150px;
-	border-radius: 50%;
-	margin-bottom: 15px;
+.links-item:hover {
+	color: black;
+	background-color: #FFEF61;
+	border-color: black;
 }
 
 /*Skills section*/
