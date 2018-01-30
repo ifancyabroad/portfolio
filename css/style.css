@@ -47,11 +47,34 @@ a {
 	height: 36em;
 }
 
-.title-titles {
+.title-icon {
 	position: absolute;
-	top: 30%;
+	top: 10%;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.title-icon i {
+	border: 2px solid #ff6161;
+	border-radius: 50%;
+	padding: 5px;
+	transition: 0.7s;
+}
+
+.title-titles {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.title-titles h1 {
+	font-size: 3.2em;
+	font-weight: 700;
+}
+
+.title-titles h2 {
+	color: #dadada;	
 }
 
 .title-links {
@@ -72,15 +95,15 @@ a {
 	color: white;
 	margin: 10px;
 	padding: 5px;
-	border: 2px solid #888;
+	border: 2px solid #ff6161;
 	border-radius: 20px;
 	width: 100px;
 	transition: 0.7s;
 }
 
-.links-item:hover {
-	color: black;
-	background-color: #FFEF61;
+.links-item:hover, .title-icon i:hover {
+	color: #FFA8A8;
+	background-color: black;
 	border-color: black;
 }
 
