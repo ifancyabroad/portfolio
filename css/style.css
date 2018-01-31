@@ -65,11 +65,15 @@ a {
 	height: 36em;
 }
 
-.title-icon {
+.title-icon, .title-titles, .title-links {
 	position: absolute;
-	top: 10%;
 	left: 50%;
 	transform: translateX(-50%);
+	margin: 0;
+}
+
+.title-icon {
+	top: 10%;
 }
 
 .title-icon i {
@@ -80,10 +84,7 @@ a {
 }
 
 .title-titles {
-	position: absolute;
 	top: 25%;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 .title-titles h1 {
@@ -96,10 +97,7 @@ a {
 }
 
 .title-links {
-	position: absolute;
 	top: 65%;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 .links-list {
