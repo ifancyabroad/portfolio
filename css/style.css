@@ -25,7 +25,7 @@ a {
 
 .subtitle-box {
 	text-align: center;
-	margin: 100px 0;
+	margin: 80px 0;
 }
 
 .subtitle {
@@ -77,10 +77,33 @@ a {
 }
 
 .title-icon i {
-	border: 2px solid #63ccff;
+	position: relative;
+	top: -47px;
 	border-radius: 50%;
 	padding: 5px;
-	transition: 0.7s;
+}
+
+.icon-border {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	border: 2px solid;
+	border-top-color: red;
+	border-right-color: blue;
+	border-bottom-color: green;
+	border-left-color: yellow;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }
 
 .title-titles {
@@ -112,23 +135,19 @@ a {
 	color: white;
 	margin: 10px;
 	padding: 5px;
-	border: 2px solid #63ccff;
+	border: 2px solid #8c8c8c;
 	border-radius: 20px;
 	width: 125px;
 	transition: 0.7s;
 }
 
-.links-item:hover, .title-icon i:hover {
-	color: #1684b9;
+.links-item:hover {
+	color: #444;
 	background-color: white;
 	border-color: white;
 }
 
 /*Skills section*/
-.logo {
-
-}
-
 .info {
 	color: #737373;
 	font-size: 0.9em;
@@ -137,6 +156,11 @@ a {
 
 .skill-icon {
 	width: 100px;
+}
+
+.skill-name {
+	font-weight: 700;
+	color: black;
 }
 
 /*Projects section*/
@@ -202,9 +226,20 @@ footer {
 	background-color: rgb(40, 40, 40);
 }
 
+.profile {
+	margin-bottom: 75px;
+}
+
+.profile-picture {
+	border: 2px solid #4b4b4b;
+	width: 150px;
+	float: left;
+	margin-right: 20px;
+}
+
 .about {
 	color: #cacaca;
-	font-size: 1.2em;
+	text-align: left;
 }
 
 .email {
