@@ -69,6 +69,7 @@ a {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 	margin: 0;
 }
 
@@ -139,6 +140,7 @@ a {
 	border-radius: 20px;
 	width: 125px;
 	transition: 0.7s;
+	-webkit-transition: 0.7s;
 }
 
 .links-item:hover {
