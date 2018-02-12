@@ -173,12 +173,19 @@
 				<div class="subtitle-separator"></div>
 			</div>
 		</div>
-		<div class="row justify-content-center text-center">
-			<div class="col-sm-6 profile">
+		<div class="row justify-content-center text-center profile">
+			<div class="col-sm-4 about">
 				<img src="images/profile.jpg" class="profile-picture">
-				<p class="about">Thanks for taking the time to look at my website. I am always looking for a new challenge so whether it's a website, a UX/UI interface or any other front-end development project, please don't hesitate to get in touch!</p>
-				<p class="about">You can e-mail me at <a href="mailto:edgar.nightingale@btinternet.com" class="email">edgar.nightingale@btinternet.com</a> or use one of the below links.</p>
+				<p>Thanks for taking the time to look at my website. I am always looking for a new challenge so whether it's a website, a UX/UI interface or any other front-end development project, please don't hesitate to get in touch!</p>
+				<p>You can e-mail me directly at <a href="mailto:edgar.nightingale@btinternet.com" class="email">edgar.nightingale@btinternet.com</a> or alternatively submit your details and message in the adjacent form.</p>
 			</div>
+			<form id="contact" class="col-sm-4">
+				<input class="form-control form-group" type="text" name="name" placeholder="Name">
+				<input class="form-control form-group" type="text" name="email" placeholder="E-mail">
+				<input class="form-control form-group" type="text" name="phone" placeholder="Telephone">
+				<textarea class="form-control form-group" style="resize:none" name="message" placeholder="Message" rows="6" cols="25"></textarea>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-xs-12">
@@ -193,5 +200,6 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>

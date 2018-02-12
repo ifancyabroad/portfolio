@@ -232,6 +232,10 @@ footer {
 	margin-bottom: 75px;
 }
 
+.about {
+	margin-bottom: 40px;
+}
+
 .profile-picture {
 	border: 2px solid #4b4b4b;
 	width: 150px;
@@ -239,7 +243,7 @@ footer {
 	margin-right: 20px;
 }
 
-.about {
+.about p {
 	color: #cacaca;
 	text-align: left;
 }
