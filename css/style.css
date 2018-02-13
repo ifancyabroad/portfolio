@@ -84,29 +84,6 @@ a {
 	padding: 5px;
 }
 
-.icon-border {
-	border-radius: 50%;
-	height: 50px;
-	width: 50px;
-	border: 2px solid;
-	border-top-color: red;
-	border-right-color: blue;
-	border-bottom-color: green;
-	border-left-color: yellow;
-	-webkit-animation: spin 2s linear infinite;
-	animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-	0% { -webkit-transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
-}
-
 .title-titles {
 	top: 25%;
 }
@@ -228,14 +205,6 @@ footer {
 	background-color: rgb(40, 40, 40);
 }
 
-.profile {
-	margin-bottom: 75px;
-}
-
-.about {
-	margin-bottom: 40px;
-}
-
 .profile-picture {
 	border: 2px solid #4b4b4b;
 	width: 150px;
@@ -251,6 +220,10 @@ footer {
 .email {
 	color: white;
 	font-weight: 700;
+}
+
+.bottom-contact {
+	margin: 50px 0;
 }
 
 .social-media {

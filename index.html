@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Portfolio</title>
 	<!--Link to Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">	
+  	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">	
 	<!--Link to Font awesome for icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--Link to Bootstrap framework-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-	<!--Link to CSS-->
-  <link rel="stylesheet" href="css/style.css">
+	<!--Link to Bootstrap CSS-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<!--Link to jquery-->
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  	<!--Link to Popper.js-->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  	<!--Link to Bootstrap Javascript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--Link to style sheet-->
+  	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<!--Title section-->
 	<section class="jumbotron">
 		<div class="container-fluid title">
-			<div class="row title-icon">
-				<div class="col-xs-12">
-					<div class="icon-border"></div>
-					<i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
-				</div>
-			</div>
+			<nav class="navbar navbar-expand">
+				<a class="navbar-brand" href="#"><i class="fa fa-laptop fa-2x" aria-hidden="true"></i></a>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+				</ul>
+			</nav>
 			<div class="row justify-content-center title-titles">
 				<div class="col-xs-12">
 					<h1>Edgar Nightingale</h1>
@@ -31,11 +39,9 @@
 				</div>
 			</div>
 			<div class="row title-links">
-				<ul class="col-sm-12 links-list">
-					<a href="#skills-link"><li class="links-item">Skills</li></a>
-					<a href="#projects-link"><li class="links-item">Projects</li></a>
-					<a href="#contact-link"><li class="links-item">Contact</li></a>
-				</ul>
+				<div class="col-sm-12">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Get in touch</button>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -173,19 +179,19 @@
 				<div class="subtitle-separator"></div>
 			</div>
 		</div>
-		<div class="row justify-content-center text-center profile">
-			<div class="col-sm-4 about">
+		<div class="row justify-content-center">
+			<div class="col-sm-6">
 				<img src="images/profile.jpg" class="profile-picture">
 				<p>Thanks for taking the time to look at my website. I am always looking for a new challenge so whether it's a website, a UX/UI interface or any other front-end development project, please don't hesitate to get in touch!</p>
-				<p>You can e-mail me directly at <a href="mailto:edgar.nightingale@btinternet.com" class="email">edgar.nightingale@btinternet.com</a> or alternatively submit your details and message in the adjacent form.</p>
+				<p>You can e-mail me directly at <a href="mailto:edgar.nightingale@btinternet.com" class="email">edgar.nightingale@btinternet.com</a> click below.</p>
 			</div>
-			<form id="contact" class="col-sm-4">
-				<input class="form-control form-group" type="text" name="name" placeholder="Name">
-				<input class="form-control form-group" type="text" name="email" placeholder="E-mail">
-				<input class="form-control form-group" type="text" name="phone" placeholder="Telephone">
-				<textarea class="form-control form-group" style="resize:none" name="message" placeholder="Message" rows="6" cols="25"></textarea>
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</form>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-xs-12">
+				<div class="bottom-contact">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Get in touch</button>
+				</div>
+			</div>
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-xs-12">
@@ -200,6 +206,32 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Contact Form Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          			<span aria-hidden="true">&times;</span>
+	        		</button>
+	      		</div>
+	      		<div class="modal-body">
+	        		<form id="contact">
+						<input class="form-control form-group" type="text" name="name" placeholder="Name">
+						<input class="form-control form-group" type="text" name="email" placeholder="E-mail">
+						<input class="form-control form-group" type="text" name="phone" placeholder="Telephone">
+						<textarea class="form-control form-group" style="resize:none" name="message" placeholder="Message" rows="6" cols="25"></textarea>
+					</form>
+	      		</div>
+	      		<div class="modal-footer">
+	        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        		<button type="submit" form="contact" class="btn btn-primary">Submit</button>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
