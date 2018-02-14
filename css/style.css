@@ -79,8 +79,10 @@ a {
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 	width: 0;
 	transition: width 1s;
+	-webkit-transition: width 1s;
 }
 
 .navbar a:hover {
@@ -92,29 +94,42 @@ a {
 	border: 1px solid #007bff;
 }
 
-.title-titles, .title-links {
+.title-info {
 	position: absolute;
+	top: 25%;
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	margin: 0;
 }
 
-.title-titles {
-	top: 25%;
-}
-
-.title-titles h1 {
+.title-info h1 {
 	font-size: 3.2em;
 	font-weight: 700;
 }
 
-.title-titles h2 {
+.title-info h2 {
 	color: #dadada;	
+	margin-bottom: 75px;
 }
 
-.title-links {
-	top: 65%;
+.btn-contact {
+	font-size: 1.2em;
+	width: 150px;
+	padding: 10px;
+	color: white;
+	background-color: rgba(40, 40, 40, 0);
+	border: 3px solid #007bff;
+	border-radius: 30px;
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+
+.btn-contact:hover {
+	cursor: pointer;
+	width: 200px;
+	color: white;
+	background-color: #007bff;
 }
 
 /*Skills section*/
