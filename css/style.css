@@ -95,12 +95,7 @@ a {
 }
 
 .title-info {
-	position: absolute;
-	top: 25%;
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	margin: 0;
+	margin: 80px 0;
 }
 
 .title-info h1 {
