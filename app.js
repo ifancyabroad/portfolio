@@ -1,29 +1,39 @@
 // Variable for contact form
-const contactForm = document.getElementById('contact');
+var contactForm = $('#contact');
+
+// Polyfill for unsupported form attribute in Internet Explorer
+$('button[type=submit]').click(function() {
+    contactForm.submit();
+});
 
 // Add submit event listener to the form
-contactForm.addEventListener('submit', function(e) {
+contactForm.submit(function(e) {
 	e.preventDefault();
 
-	// Set variables for inputs
-	const name = document.getElementsByName('name')[0].value;
-	const email = document.getElementsByName('email')[0].value;
-	const phone = document.getElementsByName('phone')[0].value;
-	const message = document.getElementsByName('message')[0].value;
+	// Serialise the form data
+	var data = contactForm.serialize();
 
-	// Set data from input values
-	const data = `name=${name}&email=${email}&phone=${phone}&message=${message}`;
+	// Disable inputs and submit button
+	$('input').prop('disabled', true);
+	$('textarea').prop('disabled', true);
+	$('button[type=submit]').prop('disabled', true);
 
-	// Create XMLHttp request
-	const sendMail = new XMLHttpRequest();
+	// Send AJAX request
+	var request = $.ajax({
+		url: 'mail.php',
+		type: 'POST',
+		data: data
+	});
 
-	// Set container for response from php form
-	sendMail.onreadystatechange = function() {
-		document.getElementById('contact').innerHTML = this.responseText;
-	}
+	// Display thank you message if request sent successfully
+    request.done(function (response, textStatus, jqXHR){
+        contactForm.html(response);
+    });
 
-	// Send the request
-	sendMail.open('POST', 'mail.php?', true);
-	sendMail.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	sendMail.send(data);
+    // Inform user if message fails to send
+    request.fail(function (jqXHR, textStatus, errorThrown){
+       	contactForm.html('<p>Sorry there was an error sending your message, please e-mail me directly at <a href="mailto:edgar.nightingale@btinternet.com" class="email">edgar.nightingale@btinternet.com</a> instead.</p>');
+        // Log the error to the console
+        console.error("The following error occurred: " + textStatus, errorThrown);
+    });
 });
