@@ -146,6 +146,8 @@ a {
 /*Projects section*/
 .projects {
 	background-color: rgb(240, 240, 240);
+	perspective: 1000px;
+	-webkit-perspective: 1000px;
 }
 
 .flip-container {
