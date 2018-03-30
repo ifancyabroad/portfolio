@@ -127,6 +127,10 @@ a {
 	background-color: #007bff;
 }
 
+.btn-contact:focus {
+	outline: none;
+}
+
 /*Skills section*/
 .info {
 	color: #737373;
