@@ -80,9 +80,17 @@ a {
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
+	background-color: #007bff;
+	height: 1px;
 	width: 0;
 	transition: width 1s;
 	-webkit-transition: width 1s;
+}
+
+.navbar a {
+	transition: 1s;
+	-webkit-transition: 1s;
+	color: #dadada;
 }
 
 .navbar a:hover {
@@ -91,7 +99,6 @@ a {
 
 .nav-link:hover .underline {
 	width: 100%;
-	border: 1px solid #007bff;
 }
 
 .title-info {
