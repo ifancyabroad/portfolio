@@ -4,7 +4,7 @@
 	margin: 0;
 }
 
-/*Default font for the body*/
+/*Default font and styles for the body*/
 body {
 	font-family: Roboto, sans-serif;
 	font-weight: 300;
@@ -23,20 +23,43 @@ a {
 	padding-bottom: 50px;
 }
 
-.subtitle-box {
-	text-align: center;
-	margin: 80px 0;
-}
-
+/*Subtitle areas*/
 .subtitle {
 	font-size: 2.6em;
 	font-weight: 700;
 }
 
+.subtitle-box {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-bottom: 80px;
+}
+
 .subtitle-box h3 {
-	color: #565656;
 	font-size: 1.4em;
 	margin: 10px;
+}
+
+.skills .subtitle-box {
+	background-color: #e6e6e6;
+}
+
+.skills .subtitle-box h3 {
+	color: #565656;
+}
+
+.projects .subtitle-box {
+	color: white;
+	background-color: #007bff;
+}
+
+.projects .subtitle-box h3 {
+	color: #c7c7c7;
+}
+
+footer .subtitle-box {
+	background-color: #1b1b1b;
 }
 
 .subtitle-separator {
@@ -48,6 +71,7 @@ a {
 
 /*Title section*/
 .jumbotron {
+	background-attachment: fixed;
 	background-image: url('../images/title-background.jpg');
 	background-position: center top;
 	background-size: cover;
@@ -68,6 +92,14 @@ a {
 .icon {
 	background-color: #007bff;
 	border-radius: 5px;
+}
+
+.navbar {
+	transition: 1s;
+}
+
+.navbar-style {
+	background-color: rgba(40, 40, 40);
 }
 
 .nav-link {
@@ -102,7 +134,7 @@ a {
 }
 
 .title-info {
-	margin: 80px 0;
+	margin: 160px 0;
 }
 
 .title-info h1 {
@@ -211,10 +243,8 @@ a {
 	width: 80%;
 }
 
-/*Contact section*/
+/*About section*/
 footer {
-	border-top: 1px solid rgb(160, 160, 160);
-	padding: 10px;
 	color: rgb(255, 255, 255);
 	background-color: rgb(40, 40, 40);
 }
@@ -240,13 +270,17 @@ footer {
 	margin: 50px 0;
 }
 
+.social-media-icons {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
 .social-media {
-	text-align: center;
 	color: black;
 	background-color: white;
 	border: 4px solid #9a9a9a;
 	border-radius: 50%;
-	margin: 10px;
+	margin-right: 10px;
 	padding: 5px;
 	width: 50px!important;
 	transition: transform 0.2s;

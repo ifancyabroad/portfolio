@@ -21,30 +21,32 @@
 </head>
 
 <body>
+	<nav class="navbar fixed-top navbar-expand">
+		<a class="navbar-brand" href="#">
+			<i class="fas fa-user-circle fa-2x icon" data-fa-transform="shrink-4" aria-hidden="true"></i>
+		</a>
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#skills-link">Skills<div class="underline"></div></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#projects-link">Projects<div class="underline"></div></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#about-link">About<div class="underline"></div></a>				
+			</li>
+		</ul>
+	</nav>
 	<!--Title section-->
 	<section class="jumbotron">
 		<div class="container-fluid title">
-			<nav class="navbar navbar-expand">
-				<a class="navbar-brand" href="#">
-					<i class="fas fa-user-circle fa-2x icon" data-fa-transform="shrink-4" aria-hidden="true"></i>
-				</a>
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#skills-link">Skills<div class="underline"></div></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#projects-link">Projects<div class="underline"></div></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact-link">About<div class="underline"></div></a>				
-					</li>
-				</ul>
-			</nav>
-			<div class="row justify-content-center title-info">
+			<div class="row justify-content-center">
 				<div class="col-xs-12">
-					<h1>Edgar Nightingale</h1>
-					<h2>Front-End Web Developer</h2>
-					<button type="button" class="btn-contact" data-toggle="modal" data-target="#myModal">Get in touch</button>
+					<div class="title-info">
+						<h1>Edgar Nightingale</h1>
+						<h2>Front-End Web Developer</h2>
+						<button type="button" class="btn-contact" data-toggle="modal" data-target="#myModal">Get in touch</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -52,13 +54,13 @@
 	
 	<!--Skills section-->
 	<section id="skills-link" class="container-fluid skills">
-		<div class="row text-center">
-			<div class="col-md-12 subtitle-box">
+		<div class="row subtitle-box">
+			<div class="col-md-12">
 				<h2 class="subtitle">Skills</h2>
 				<h3>Below are examples of some of my core web development skills</h3>
 			</div>
 		</div>
-		<div class="row justify-content-center align-items-start text-center">
+		<div class="row justify-content-center text-center">
 			<div class="col-sm-3">
 				<img src="images\HTML5_logo.png" alt="HTML5 logo" class="skill-icon">
 				<p class="info"><span class="skill-name">Hypertext Markup Language</span> is the standard markup language for creating web pages and web applications.</p>
@@ -72,7 +74,7 @@
 				<p class="info">Alongside HTML and CSS, <span class="skill-name">JavaScript</span> is one of the three core technologies of World Wide Web content production.</p>
 			</div>
 		</div>
-		<div class="row justify-content-center align-items-start text-center">
+		<div class="row justify-content-center text-center">
 			<div class="col-sm-3">
 				<img src="images\bootstrap_logo.png" alt="Bootstrap logo" class="skill-icon">
 				<p class="info"><span class="skill-name">Bootstrap</span> is a free and open-source front-end web framework for designing websites and web applications.</p>
@@ -174,16 +176,16 @@
 		</div>
 	</section>
 
-	<!--Contact section-->
-	<footer id="contact-link" class="container-fluid">
+	<!--About section-->
+	<footer id="about-link" class="container-fluid">
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">
-				<h2 class="subtitle">Contact</h2>
+				<h2 class="subtitle">About</h2>
 				<div class="subtitle-separator"></div>
 			</div>
 		</div>
 		<div class="row justify-content-center">
-			<div class="col-sm-6">
+			<div class="col-sm-5">
 				<img src="images/profile.jpg" class="profile-picture">
 				<p>Thanks for taking the time to look at my website. I am always looking for a new challenge so whether it's a website, a UX/UI interface or any other front-end development project, please don't hesitate to get in touch!</p>
 				<p>You can e-mail me directly at <a href="mailto:edgar.nightingale@btinternet.com" class="email">edgar.nightingale@btinternet.com</a> or click the button below.</p>
@@ -196,8 +198,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="row justify-content-center">
-			<div class="col-xs-12">
+		<div class="row justify-content-center text-center">
+			<div class="col-sm-4 social-media-icons">
 				<a href="https://github.com/ifancyabroad" target="_blank"><i class="fab fa-github-alt fa-3x social-media" aria-hidden="true"></i></a>
 				<a href="#"><i class="fab fa-linkedin-in fa-3x social-media" data-fa-transform="shrink-3" aria-hidden="true"></i></a>
 				<a href="mailto:edgar.nightingale@btinternet.com"><i class="fas fa-envelope fa-3x social-media" data-fa-transform="shrink-2" aria-hidden="true"></i></a>

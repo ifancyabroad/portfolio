@@ -68,3 +68,12 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
 		}
 	}
 });
+
+// Apply background to navbar once scrolled away from the top
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 50) {
+        $('nav').addClass('navbar-style');
+    } else {
+        $('nav').removeClass('navbar-style');
+    }
+});
