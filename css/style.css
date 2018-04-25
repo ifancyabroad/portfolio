@@ -36,37 +36,70 @@ a {
 	margin-bottom: 80px;
 }
 
-.subtitle-box h3 {
+.subtitle-icon {
+	margin-top: 10px;
+}
+
+.tagline {
 	font-size: 1.4em;
 	margin: 10px;
 }
 
 .skills .subtitle-box {
 	background-color: #e6e6e6;
+	border-top: 1px solid #cacaca;
+	border-bottom: 1px solid #cacaca;
 }
 
-.skills .subtitle-box h3 {
+.skills .tagline {
 	color: #565656;
+}
+
+.skills .subtitle-icon {
+	color: #007bff;
 }
 
 .projects .subtitle-box {
 	color: white;
 	background-color: #007bff;
+	border-top: 1px solid #0054ad;
+	border-bottom: 1px solid #0054ad;
 }
 
-.projects .subtitle-box h3 {
+.projects .tagline {
 	color: #c7c7c7;
 }
 
 footer .subtitle-box {
-	background-color: #1b1b1b;
+	background-image: url('../images/about-background.jpg');
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top: 1px solid #cacaca;
+	border-bottom: 1px solid #cacaca;
 }
 
-.subtitle-separator {
-	width: 60%;
-	margin: 5px auto;
-	border: 2px solid #737373;
-	border-radius: 50%;
+footer .tagline {
+	color: #c7c7c7;
+}
+
+footer .subtitle-icon {
+	color: #007bff;
+}
+
+.about-overlay {
+	background-color: rgba(27, 27, 27, 0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+footer .subtitle, footer h3, footer .subtitle-icon {
+	z-index: 1;
+	position: relative;
 }
 
 /*Title section*/
