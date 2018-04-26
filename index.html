@@ -22,21 +22,22 @@
 
 <body>
 	<nav class="navbar fixed-top navbar-expand">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand ml-5" href="#">
 			<i class="fas fa-user-circle fa-2x icon" data-fa-transform="shrink-4" aria-hidden="true"></i>
 		</a>
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item">
+		<ul class="navbar-nav ml-auto mr-5">
+			<li class="nav-item ml-3">
 				<a class="nav-link" href="#skills-link">Skills<div class="underline"></div></a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item ml-3">
 				<a class="nav-link" href="#projects-link">Projects<div class="underline"></div></a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item ml-3">
 				<a class="nav-link" href="#about-link">About<div class="underline"></div></a>				
 			</li>
 		</ul>
 	</nav>
+
 	<!--Title section-->
 	<section class="jumbotron">
 		<div class="container-fluid title">
@@ -53,14 +54,17 @@
 	</section>
 	
 	<!--Skills section-->
-	<section id="skills-link" class="container-fluid skills">
+	<section id="skills-link" class="container-fluid skills-banner">
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">
 				<h2 class="subtitle">Skills</h2>
+				<div class="subtitle-underline"></div>
 				<h3 class="tagline">Below are examples of some of my core web development skills</h3>
-				<i class="far fa-check-circle fa-3x subtitle-icon"></i>
 			</div>
 		</div>
+	</section>
+
+	<section class="container-fluid skills">
 		<div class="row justify-content-center text-center">
 			<div class="col-sm-3">
 				<img src="images\HTML5_logo.png" alt="HTML5 logo" class="skill-icon">
@@ -92,14 +96,17 @@
 	</section>
 
 	<!--Projects section-->
-	<section id="projects-link" class="container-fluid projects">
+	<section id="projects-link" class="container-fluid projects-banner">
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">
 				<h2 class="subtitle">Projects</h2>
+				<div class="subtitle-underline"></div>
 				<h3 class="tagline">Click one of the below projects to test it out!</h3>
-				<i class="fas fa-laptop fa-3x subtitle-icon"></i>
 			</div>
 		</div>
+	</section>
+
+	<section class="container-fluid projects">
 		<div class="row justify-content-center text-center">
 			<div class="col-md-3">				
 				<div class="flip-container">
@@ -179,21 +186,59 @@
 	</section>
 
 	<!--About section-->
-	<footer id="about-link" class="container-fluid">
+	<section id="about-link" class="container-fluid about-banner">
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">
-				<div class="about-overlay"></div>
 				<h2 class="subtitle">About</h2>
+				<div class="subtitle-underline"></div>
 				<h3 class="tagline">Thanks and I hope to hear from you soon!</h3>
-				<i class="far fa-user fa-3x subtitle-icon"></i>
 			</div>
 		</div>
+	</section>
+
+	<section class="container-fluid about">
+		<div class="about-overlay"></div>
 		<div class="row justify-content-center">
-			<div class="col-sm-5">
+			<div class="col-sm-4">
 				<img src="images/profile.jpg" class="profile-picture">
 				<p>Thanks for taking the time to look at my website. I am always looking for a new challenge so whether it's a website, a UX/UI interface or any other front-end development project, please don't hesitate to get in touch!</p>
 				<p>You can e-mail me directly at <a href="mailto:edgar.nightingale@btinternet.com" class="email">edgar.nightingale@btinternet.com</a> or click the button below.</p>
 			</div>
+			<div class="col-sm-4">
+				<ul class="about-list">
+					<li class="service">
+						<i class="fas fa-magic"></i>
+						<p>UX/UI Design</p>
+					</li>
+					<li class="service">
+						<i class="fas fa-desktop"></i>
+						<p>Website Development</p>
+					</li>
+					<li class="service">
+						<i class="fas fa-code"></i>
+						<p>Coding</p>
+					</li>
+					<br>
+					<a href="https://github.com/ifancyabroad" target="_blank">
+						<li class="service social-media">
+							<i class="fab fa-github-alt" aria-hidden="true"></i>
+							<p>Github</p>
+						</li>
+					</a>
+					<a href="#">
+						<li class="service social-media">
+							<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+							<p>LinkedIn</p>
+						</li>
+					</a>
+					<a href="mailto:edgar.nightingale@btinternet.com">
+						<li class="service social-media">
+							<i class="fas fa-envelope" aria-hidden="true"></i>
+							<p>E-mail</p>
+						</li>
+					</a>
+				</div>
+			</ul>
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-xs-12">
@@ -202,14 +247,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="row justify-content-center text-center">
-			<div class="col-sm-4 social-media-icons">
-				<a href="https://github.com/ifancyabroad" target="_blank"><i class="fab fa-github-alt fa-3x social-media" aria-hidden="true"></i></a>
-				<a href="#"><i class="fab fa-linkedin-in fa-3x social-media" data-fa-transform="shrink-3" aria-hidden="true"></i></a>
-				<a href="mailto:edgar.nightingale@btinternet.com"><i class="fas fa-envelope fa-3x social-media" data-fa-transform="shrink-2" aria-hidden="true"></i></a>
-			</div>
-		</div>
-		<div class="row text-center">
+	</section>
+
+	<footer class="container-fluid">
+		<div class="row">
 			<div class="col-md-12">
 				<p class="signature">Made by &copy; <span class="bold">Edgar Nightingale</span></p>
 			</div>

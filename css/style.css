@@ -19,8 +19,9 @@ a {
 	font-weight: 700;
 }
 
-.projects, .skills {
-	padding-bottom: 50px;
+.projects, .skills, .about {
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 /*Subtitle areas*/
@@ -29,77 +30,22 @@ a {
 	font-weight: 700;
 }
 
+.subtitle-underline {
+	background-color: #007bff;
+	height: 2px;
+	width: 80px;
+	margin: auto;
+}
+
 .subtitle-box {
 	text-align: center;
 	padding-top: 80px;
 	padding-bottom: 80px;
-	margin-bottom: 80px;
-}
-
-.subtitle-icon {
-	margin-top: 10px;
 }
 
 .tagline {
 	font-size: 1.4em;
-	margin: 10px;
-}
-
-.skills .subtitle-box {
-	background-color: #e6e6e6;
-	border-top: 1px solid #cacaca;
-	border-bottom: 1px solid #cacaca;
-}
-
-.skills .tagline {
-	color: #565656;
-}
-
-.skills .subtitle-icon {
-	color: #007bff;
-}
-
-.projects .subtitle-box {
-	color: white;
-	background-color: #007bff;
-	border-top: 1px solid #0054ad;
-	border-bottom: 1px solid #0054ad;
-}
-
-.projects .tagline {
-	color: #c7c7c7;
-}
-
-footer .subtitle-box {
-	background-image: url('../images/about-background.jpg');
-	background-attachment: fixed;
-	background-position: center top;
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-top: 1px solid #cacaca;
-	border-bottom: 1px solid #cacaca;
-}
-
-footer .tagline {
-	color: #c7c7c7;
-}
-
-footer .subtitle-icon {
-	color: #007bff;
-}
-
-.about-overlay {
-	background-color: rgba(27, 27, 27, 0.8);
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
-footer .subtitle, footer h3, footer .subtitle-icon {
-	z-index: 1;
-	position: relative;
+	margin-top: 20px;
 }
 
 /*Title section*/
@@ -124,7 +70,7 @@ footer .subtitle, footer h3, footer .subtitle-icon {
 
 .icon {
 	background-color: #007bff;
-	border-radius: 5px;
+	border-radius: 50%;
 }
 
 .navbar {
@@ -204,6 +150,20 @@ footer .subtitle, footer h3, footer .subtitle-icon {
 }
 
 /*Skills section*/
+.skills-banner .subtitle-box {
+	background-color: #e6e6e6;
+	border-top: 1px solid #cacaca;
+	border-bottom: 1px solid #cacaca;
+}
+
+.skills-banner .tagline {
+	color: #565656;
+}
+
+.skills-banner .subtitle-icon {
+	color: #007bff;
+}
+
 .info {
 	color: #737373;
 	font-size: 0.9em;
@@ -220,6 +180,21 @@ footer .subtitle, footer h3, footer .subtitle-icon {
 }
 
 /*Projects section*/
+.projects-banner .subtitle-box {
+	color: white;
+	background-color: #007bff;
+	border-top: 1px solid #0054ad;
+	border-bottom: 1px solid #0054ad;
+}
+
+.projects-banner .tagline {
+	color: #c7c7c7;
+}
+
+.projects-banner .subtitle-underline {
+	background-color: white;
+}
+
 .projects {
 	background-color: rgb(240, 240, 240);
 	perspective: 1000px;
@@ -277,6 +252,19 @@ footer .subtitle, footer h3, footer .subtitle-icon {
 }
 
 /*About section*/
+.about-banner .subtitle-box {
+	color: rgb(255, 255, 255);
+	background-color: rgb(40, 40, 40);
+}
+
+.about-banner .tagline {
+	color: #c7c7c7;
+}
+
+.about-banner .subtitle-icon {
+	color: #007bff;
+}
+
 footer {
 	color: rgb(255, 255, 255);
 	background-color: rgb(40, 40, 40);
@@ -289,9 +277,34 @@ footer {
 	margin-right: 20px;
 }
 
+.about {
+	background-image: url('../images/about-background.jpg');
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top: 1px solid #606060;
+	border-bottom: 1px solid #606060;
+	position: relative;
+}
+
+.about-overlay {
+	background-color: rgba(27, 27, 27, 0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.about .row {
+	position: relative;
+	z-index: 1;
+}
+
 .about p {
 	color: #cacaca;
-	text-align: left;
+	font-size: 0.9em;
 }
 
 .email {
@@ -299,35 +312,39 @@ footer {
 	font-weight: 700;
 }
 
-.bottom-contact {
-	margin: 50px 0;
+.about-list {
+	width: 180px;
+	margin: auto;
 }
 
-.social-media-icons {
-	margin-top: 40px;
-	margin-bottom: 40px;
+.service {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.service p {
+	margin-bottom: 0;
+	margin-left: 10px;
+}
+
+.bottom-contact {
+	margin: 80px 0;
 }
 
 .social-media {
-	color: black;
-	background-color: white;
-	border: 4px solid #9a9a9a;
-	border-radius: 50%;
-	margin-right: 10px;
-	padding: 5px;
-	width: 50px!important;
-	transition: transform 0.2s;
-	-webkit-transition: transform 0.2s;
+	transition: color 0.2s;
+	-webkit-transition: color 0.2s;
 }
 
 .social-media:hover {
-	transform: scale(1.2,1.2);
-	-webkit-transform: scale(1.2,1.2);
+	color: white;
 }
 
 .signature {
 	margin-top: 20px;
 	font-size: 0.8em;
+	text-align: center;
 }
 
 /*Responsive design*/
@@ -339,5 +356,11 @@ footer {
 	
 	.view-more {
 		display: block;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.about-list {
+		margin-top: 40px;
 	}
 }
