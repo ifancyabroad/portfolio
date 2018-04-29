@@ -12,6 +12,7 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   	<!--Link to jquery-->
   	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  	<script src="js/jquery.fadethis.min.js"></script>
   	<!--Link to Popper.js-->
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   	<!--Link to Bootstrap Javascript-->
@@ -57,9 +58,11 @@
 	<section id="skills-link" class="container-fluid skills-banner">
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">
-				<h2 class="subtitle">Skills</h2>
-				<div class="subtitle-underline"></div>
-				<h3 class="tagline">Below are examples of some of my core web development skills</h3>
+				<div class="slide-left">
+					<h2 class="subtitle">Skills</h2>
+					<div class="subtitle-underline"></div>
+					<h3 class="tagline">Below are examples of some of my core web development skills</h3>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -67,30 +70,42 @@
 	<section class="container-fluid skills">
 		<div class="row justify-content-center text-center">
 			<div class="col-sm-3">
-				<img src="images\HTML5_logo.png" alt="HTML5 logo" class="skill-icon">
-				<p class="info"><span class="skill-name">Hypertext Markup Language</span> is the standard markup language for creating web pages and web applications.</p>
+				<div class="slide-right">
+					<img src="images\HTML5_logo.png" alt="HTML5 logo" class="skill-icon">
+					<p class="info"><span class="skill-name">Hypertext Markup Language</span> is the standard markup language for creating web pages and web applications.</p>
+				</div>
 			</div>
 			<div class="col-sm-3">
-				<img src="images\CSS3_logo.png" alt="CSS3 logo" class="skill-icon">
-				<p class="info"><span class="skill-name">Cascading Style Sheets</span> is a style sheet language used for describing the presentation of a document written in a markup language.</p>
+				<div class="slide-right">
+					<img src="images\CSS3_logo.png" alt="CSS3 logo" class="skill-icon">
+					<p class="info"><span class="skill-name">Cascading Style Sheets</span> is a style sheet language used for describing the presentation of a document written in a markup language.</p>
+				</div>
 			</div>
 			<div class="col-sm-3">
-				<img src="images\javascript_logo.png" alt="JavaScript logo" class="skill-icon">
-				<p class="info">Alongside HTML and CSS, <span class="skill-name">JavaScript</span> is one of the three core technologies of World Wide Web content production.</p>
+				<div class="slide-right">
+					<img src="images\javascript_logo.png" alt="JavaScript logo" class="skill-icon">
+					<p class="info">Alongside HTML and CSS, <span class="skill-name">JavaScript</span> is one of the three core technologies of World Wide Web content production.</p>
+				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center text-center">
 			<div class="col-sm-3">
-				<img src="images\bootstrap_logo.png" alt="Bootstrap logo" class="skill-icon">
-				<p class="info"><span class="skill-name">Bootstrap</span> is a free and open-source front-end web framework for designing websites and web applications.</p>
+				<div class="slide-left">
+					<img src="images\bootstrap_logo.png" alt="Bootstrap logo" class="skill-icon">
+					<p class="info"><span class="skill-name">Bootstrap</span> is a free and open-source front-end web framework for designing websites and web applications.</p>
+				</div>
 			</div>
 			<div class="col-sm-3">
-				<img src="images\jquery_logo.png" alt="jQuery logo" class="skill-icon">
-				<p class="info"><span class="skill-name">jQuery</span> is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.</p>
+				<div class="slide-left">
+					<img src="images\jquery_logo.png" alt="jQuery logo" class="skill-icon">
+					<p class="info"><span class="skill-name">jQuery</span> is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.</p>
+				</div>
 			</div>
 			<div class="col-sm-3">
-				<img src="images\knockoutjs_logo.png" alt="Knockout JS logo" class="skill-icon">
-				<p class="info"><span class="skill-name">Knockout</span> is a standalone JavaScript implementation of the Model-View-ViewModel pattern with templates.</p>
+				<div class="slide-left">
+					<img src="images\knockoutjs_logo.png" alt="Knockout JS logo" class="skill-icon">
+					<p class="info"><span class="skill-name">Knockout</span> is a standalone JavaScript implementation of the Model-View-ViewModel pattern with templates.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -99,87 +114,101 @@
 	<section id="projects-link" class="container-fluid projects-banner">
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">
-				<h2 class="subtitle">Projects</h2>
-				<div class="subtitle-underline"></div>
-				<h3 class="tagline">Click one of the below projects to test it out!</h3>
+				<div class="slide-right">
+					<h2 class="subtitle">Projects</h2>
+					<div class="subtitle-underline"></div>
+					<h3 class="tagline">Click one of the below projects to test it out!</h3>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="container-fluid projects">
 		<div class="row justify-content-center text-center">
-			<div class="col-md-3">				
-				<div class="flip-container">
-					<a href="../portfolio-projects/arena-game/" target="_blank">
-						<figure class="project">
-							<img src="images/arena.jpg" alt="Thumbnail image of an arena RPG game" class="project-thumbnail">
-							<div class="view-more">
-								<p class="tag">A role-playing game where the player battles various monsters through an arena.</p>
-							</div>
-						</figure>
-					</a>
-				</div>				
-			</div>
 			<div class="col-md-3">
-				<div class="flip-container">
-					<a href="../portfolio-projects/memory-game/" target="_blank">
-						<figure class="project">
-							<img src="images/memory.jpg" alt="Thumbnail image of a memory game" class="project-thumbnail">
-							<div class="view-more">
-								<p class="tag">A fully responsive and animated memory game with timer and score features.</p>
-							</div>
-						</figure>
-					</a>
+				<div class="slide-left">		
+					<div class="flip-container">
+						<a href="../portfolio-projects/arena-game/" target="_blank">
+							<figure class="project">
+								<img src="images/arena.jpg" alt="Thumbnail image of an arena RPG game" class="project-thumbnail">
+								<div class="view-more">
+									<p class="tag">A role-playing game where the player battles various monsters through an arena.</p>
+								</div>
+							</figure>
+						</a>
+					</div>
 				</div>			
 			</div>
 			<div class="col-md-3">
-				<div class="flip-container">
-					<a href="../portfolio-projects/neighborhood-map/" target="_blank">
-						<figure class="project">
-							<img src="images/map.jpg" alt="Thumbnail image of a map with UI and markers" class="project-thumbnail">
-							<div class="view-more">
-								<p class="tag">A town map showing information on local food venues with options to filter.</p>
-							</div>
-						</figure>
-					</a>
+				<div class="slide-left">
+					<div class="flip-container">
+						<a href="../portfolio-projects/memory-game/" target="_blank">
+							<figure class="project">
+								<img src="images/memory.jpg" alt="Thumbnail image of a memory game" class="project-thumbnail">
+								<div class="view-more">
+									<p class="tag">A fully responsive and animated memory game with timer and score features.</p>
+								</div>
+							</figure>
+						</a>
+					</div>
+				</div>	
+			</div>
+			<div class="col-md-3">
+				<div class="slide-left">
+					<div class="flip-container">
+						<a href="../portfolio-projects/neighborhood-map/" target="_blank">
+							<figure class="project">
+								<img src="images/map.jpg" alt="Thumbnail image of a map with UI and markers" class="project-thumbnail">
+								<div class="view-more">
+									<p class="tag">A town map showing information on local food venues with options to filter.</p>
+								</div>
+							</figure>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center text-center">
 			<div class="col-md-3">
-				<div class="flip-container">
-					<a href="../portfolio-projects/pomodoro-clock/" target="_blank">
-						<figure class="project">
-							<img src="images/pomodoro-clock.jpg" alt="Thumbnail image of a pomodoro timer app" class="project-thumbnail">
-							<div class="view-more">
-								<p class="tag">An timer application for alternating between breaks and work time.</p>
-							</div>
-						</figure>
-					</a>
+				<div class="slide-right">
+					<div class="flip-container">
+						<a href="../portfolio-projects/pomodoro-clock/" target="_blank">
+							<figure class="project">
+								<img src="images/pomodoro-clock.jpg" alt="Thumbnail image of a pomodoro timer app" class="project-thumbnail">
+								<div class="view-more">
+									<p class="tag">An timer application for alternating between breaks and work time.</p>
+								</div>
+							</figure>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="flip-container">
-					<a href="../portfolio-projects/twitch-browser/" target="_blank">
-						<figure class="project">
-							<img src="images/twitchbrowser.jpg" alt="Thumbnail image of a twitch channel browser" class="project-thumbnail">
-							<div class="view-more">
-								<p class="tag">A Twitch channel browser showing live stream and game information.</p>
-							</div>
-						</figure>
-					</a>
+				<div class="slide-right">
+					<div class="flip-container">
+						<a href="../portfolio-projects/twitch-browser/" target="_blank">
+							<figure class="project">
+								<img src="images/twitchbrowser.jpg" alt="Thumbnail image of a twitch channel browser" class="project-thumbnail">
+								<div class="view-more">
+									<p class="tag">A Twitch channel browser showing live stream and game information.</p>
+								</div>
+							</figure>
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="flip-container">
-					<a href="../portfolio-projects/noughts-and-crosses/" target="_blank">
-						<figure class="project">
-							<img src="images/noughts.jpg" alt="Thumbnail image of a noughts and crosses game" class="project-thumbnail">
-							<div class="view-more">
-								<p class="tag">A noughts and crosses game complete with sarcastic robot AI.</p>
-							</div>
-						</figure>
-					</a>
+				<div class="slide-right">
+					<div class="flip-container">
+						<a href="../portfolio-projects/noughts-and-crosses/" target="_blank">
+							<figure class="project">
+								<img src="images/noughts.jpg" alt="Thumbnail image of a noughts and crosses game" class="project-thumbnail">
+								<div class="view-more">
+									<p class="tag">A noughts and crosses game complete with sarcastic robot AI.</p>
+								</div>
+							</figure>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -189,9 +218,11 @@
 	<section id="about-link" class="container-fluid about-banner">
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">
-				<h2 class="subtitle">About</h2>
-				<div class="subtitle-underline"></div>
-				<h3 class="tagline">Thanks and I hope to hear from you soon!</h3>
+				<div class="slide-left">
+					<h2 class="subtitle">About</h2>
+					<div class="subtitle-underline"></div>
+					<h3 class="tagline">Thanks and I hope to hear from you soon!</h3>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -200,12 +231,14 @@
 		<div class="about-overlay"></div>
 		<div class="row justify-content-center">
 			<div class="col-sm-4">
-				<img src="images/profile.jpg" class="profile-picture">
-				<p>Thanks for taking the time to look at my website. I am always looking for a new challenge so whether it's a website, a UX/UI interface or any other front-end development project, please don't hesitate to get in touch!</p>
-				<p>You can e-mail me directly at <a href="mailto:edgar.nightingale@btinternet.com" class="email">edgar.nightingale@btinternet.com</a> or click the button below.</p>
+				<div class="slide-right">
+					<img src="images/profile.jpg" class="profile-picture">
+					<p>Thanks for taking the time to look at my website. I am always looking for a new challenge so whether it's a website, a UX/UI interface or any other front-end development project, please don't hesitate to get in touch!</p>
+					<p>You can e-mail me directly at <a href="mailto:edgar.nightingale@btinternet.com" class="email">edgar.nightingale@btinternet.com</a> or click the button below.</p>
+				</div>
 			</div>
 			<div class="col-sm-4">
-				<ul class="about-list">
+				<ul class="about-list slide-right">
 					<li class="service">
 						<i class="fas fa-magic"></i>
 						<p>UX/UI Design</p>
@@ -242,7 +275,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-xs-12">
-				<div class="bottom-contact">
+				<div class="bottom-contact slide-right">
 					<button type="button" class="btn-contact" data-toggle="modal" data-target="#myModal">Get in touch</button>
 				</div>
 			</div>
@@ -282,6 +315,7 @@
 	    	</form>
 	  	</div>
 	</div>
-	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script>$(window).fadeThis({reverse: false, offset: -50});</script>
 </body>
 </html>
