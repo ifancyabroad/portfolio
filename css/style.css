@@ -55,8 +55,8 @@ a {
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: rgb(40, 40, 40);
-	color: rgb(255, 255, 255);
+	background-color: #0f0f0f;
+	color: #fff;
 	text-align: center;
 	margin: 0;
 	padding: 0;
@@ -78,7 +78,7 @@ a {
 }
 
 .navbar-style {
-	background-color: rgba(40, 40, 40);
+	background-color: rgba(15, 15, 15, 0.8);
 }
 
 .nav-link {
@@ -152,16 +152,10 @@ a {
 /*Skills section*/
 .skills-banner .subtitle-box {
 	background-color: #e6e6e6;
-	border-top: 1px solid #cacaca;
-	border-bottom: 1px solid #cacaca;
 }
 
 .skills-banner .tagline {
 	color: #565656;
-}
-
-.skills-banner .subtitle-icon {
-	color: #007bff;
 }
 
 .info {
@@ -183,8 +177,6 @@ a {
 .projects-banner .subtitle-box {
 	color: white;
 	background-color: #007bff;
-	border-top: 1px solid #0054ad;
-	border-bottom: 1px solid #0054ad;
 }
 
 .projects-banner .tagline {
@@ -227,7 +219,7 @@ a {
 }
 
 .view-more {
-	background-color: rgb(40, 40, 40);
+	background-color: #007bff;
 	position: absolute;
 	top: 0;
 	height: 100%;
@@ -253,21 +245,17 @@ a {
 
 /*About section*/
 .about-banner .subtitle-box {
-	color: rgb(255, 255, 255);
-	background-color: rgb(40, 40, 40);
+	color: #fff;
+	background-color: #0f0f0f;
 }
 
 .about-banner .tagline {
 	color: #c7c7c7;
 }
 
-.about-banner .subtitle-icon {
-	color: #007bff;
-}
-
 footer {
-	color: rgb(255, 255, 255);
-	background-color: rgb(40, 40, 40);
+	color: #fff;
+	background-color: #0f0f0f;
 }
 
 .profile-picture {
@@ -283,13 +271,11 @@ footer {
 	background-position: center top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-top: 1px solid #606060;
-	border-bottom: 1px solid #606060;
 	position: relative;
 }
 
 .about-overlay {
-	background-color: rgba(27, 27, 27, 0.8);
+	background-color: rgba(27, 27, 27, 0.9);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -312,11 +298,6 @@ footer {
 	font-weight: 700;
 }
 
-.about-list {
-	width: 180px;
-	margin: auto;
-}
-
 .service {
 	display: flex;
 	align-items: center;
@@ -329,7 +310,8 @@ footer {
 }
 
 .bottom-contact {
-	margin: 80px 0;
+	margin-top: 80px;
+	margin-bottom: 40px;
 }
 
 .social-media {
@@ -362,5 +344,7 @@ footer {
 @media screen and (max-width: 576px) {
 	.about-list {
 		margin-top: 40px;
+		margin: auto;
+		width: 180px;
 	}
 }
