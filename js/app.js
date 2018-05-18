@@ -77,3 +77,23 @@ $(window).bind('scroll', function () {
         $('nav').removeClass('navbar-style');
     }
 });
+
+// Set margins of the navbar for small screens
+function setNavBar() {
+	if ($(window).width() < 576) {
+		$('.nav-item').removeClass('ml-3');
+		$('.navbar-nav').removeClass('ml-auto mr-5');
+		$('.navbar-nav').addClass('ml-5');
+	}
+	else {
+		$('.navbar-nav').removeClass('ml-5');
+		$('.navbar-nav').addClass('ml-auto mr-5');
+		$('.nav-item').addClass('ml-3');
+	}
+};
+
+setNavBar()
+
+$(window).resize(function() {
+	setNavBar();
+});

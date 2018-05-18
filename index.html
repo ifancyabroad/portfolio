@@ -22,21 +22,27 @@
 </head>
 
 <body>
-	<nav class="navbar fixed-top navbar-expand">
+	<nav class="navbar navbar-dark fixed-top navbar-expand-sm">
 		<a class="navbar-brand ml-5" href="#">
 			<i class="fas fa-user-circle fa-2x icon" data-fa-transform="shrink-4" aria-hidden="true"></i>
 		</a>
-		<ul class="navbar-nav ml-auto mr-5">
-			<li class="nav-item ml-3">
-				<a class="nav-link" href="#skills-link">Skills<div class="underline"></div></a>
-			</li>
-			<li class="nav-item ml-3">
-				<a class="nav-link" href="#projects-link">Projects<div class="underline"></div></a>
-			</li>
-			<li class="nav-item ml-3">
-				<a class="nav-link" href="#about-link">About<div class="underline"></div></a>				
-			</li>
-		</ul>
+		<button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto mr-5">
+				<li class="nav-item ml-3">
+					<a class="nav-link" href="#skills-link">Skills<div class="underline"></div></a>
+				</li>
+				<li class="nav-item ml-3">
+					<a class="nav-link" href="#projects-link">Projects<div class="underline"></div></a>
+				</li>
+				<li class="nav-item ml-3">
+					<a class="nav-link" href="#about-link">About<div class="underline"></div></a>				
+				</li>
+			</ul>
+		</div>
 	</nav>
 
 	<!--Title section-->
@@ -55,7 +61,7 @@
 	</section>
 	
 	<!--Skills section-->
-	<section class="container-fluid skills">
+	<section id="skills-link" class="container-fluid skills">
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">
 				<div class="slide-left">
@@ -119,7 +125,7 @@
 	</section>
 
 	<!--Projects section-->
-	<section class="container-fluid projects">
+	<section id="projects-link" class="container-fluid projects">
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">
 				<div class="slide-left">
@@ -220,7 +226,7 @@
 	</section>
 
 	<!--About section-->
-	<section class="container-fluid about">
+	<section id="about-link" class="container-fluid about">
 		<div class="about-overlay"></div>
 		<div class="row text-center">
 			<div class="col-md-12 subtitle-box">

@@ -22,6 +22,7 @@ a {
 .projects, .skills, .about {
 	padding-top: 80px;
 	padding-bottom: 80px;
+	overflow: hidden;
 }
 
 /*Subtitle areas*/
@@ -174,21 +175,20 @@ a {
 }
 
 .call-to-github {
-	width: 60%;
-	margin: auto;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
 .call-to-github h3 {
-	margin: 0;
+	margin: 10px;
 }
 
 .call-to-github a {
 	color: #dadada;
 	transition: color 0.2s;
+	margin: 10px;
 }
 
 .call-to-github a:hover {
@@ -361,5 +361,15 @@ footer {
 		margin-top: 40px;
 		margin: auto;
 		width: 180px;
+	}
+
+	.underline {
+		left: 0;
+		transform: initial;
+		-webkit-transform: initial;
+	}
+
+	.nav-item {
+		max-width: 80px;
 	}
 }
