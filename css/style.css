@@ -74,6 +74,22 @@ a {
 	border-radius: 50%;
 }
 
+.navbar-details {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.navbar-name {
+	color: white;
+	margin: 0;
+}
+
+.navbar-title {
+	color: #bababa;
+	margin: 0;
+	font-size: 0.9em;
+}
+
 .navbar {
 	transition: 1s;
 }
@@ -150,6 +166,30 @@ a {
 	outline: none;
 }
 
+/*Call to arms arena*/
+.cta-arena, .cta-github {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+.cta-arena {
+	background-color: rgb(240, 240, 240);
+}
+
+.cta-arena h3 {
+	margin: 10px;
+}
+
+.cta-arena a {
+	font-weight: 700;
+	transition: color 0.2s;
+}
+
+.cta-arena a:hover {
+	color: #7d7d7d;
+}
+
 /*Skills section*/
 .info {
 	color: #737373;
@@ -166,32 +206,23 @@ a {
 	color: black;
 }
 
-/*Call to arms section*/
-.github-row {
+/*Call to arms Github section*/
+.cta-github {
 	color: #fff;
 	background-color: #007bff;
-	padding-top: 30px;
-	padding-bottom: 30px;
 }
 
-.call-to-github {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.call-to-github h3 {
+.cta-github h3 {
 	margin: 10px;
 }
 
-.call-to-github a {
+.cta-github a {
 	color: #dadada;
+	font-weight: 700;
 	transition: color 0.2s;
-	margin: 10px;
 }
 
-.call-to-github a:hover {
+.cta-github a:hover {
 	color: #fff;
 }
 
@@ -371,5 +402,9 @@ footer {
 
 	.nav-item {
 		max-width: 80px;
+	}
+
+	.navbar-details {
+		display: none;
 	}
 }

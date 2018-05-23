@@ -69,12 +69,14 @@ $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
 	}
 });
 
-// Apply background to navbar once scrolled away from the top
+// Apply background and show name/title details on navbar once scrolled away from the top
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > 50) {
         $('nav').addClass('navbar-style');
+        $('.navbar-details').css('opacity', '1');
     } else {
         $('nav').removeClass('navbar-style');
+        $('.navbar-details').css('opacity', '0');
     }
 });
 
