@@ -1,3 +1,28 @@
+// Call owl carousel plugin
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+  	center:true,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:6000,
+    smartSpeed:2000,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      800:{
+      	items:3
+      },
+      1000:{
+        items:4
+      }
+    }
+	})
+});
+
 // Variable for contact form
 var contactForm = $('#contact');
 var responseContainer = $('#form-inputs');
