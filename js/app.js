@@ -5,6 +5,7 @@ $(document).ready(function(){
     loop:true,
     autoplay:true,
     autoplayTimeout:6000,
+    autoplayHoverPause:true,
     smartSpeed:2000,
     responsive:{
       0:{
@@ -14,13 +15,22 @@ $(document).ready(function(){
         items:2
       },
       800:{
-      	items:3
+      	items:2
       },
       1000:{
-        items:4
+        items:3
       }
     }
 	})
+
+	// $('.owl-carousel').on('click', function(e) {
+	// 	console.log($('.owl-carousel').owlCarousel())
+	// 	if ($('.owl-carousel').owlCarousel.autoplay) {
+	//     $('.owl-carousel').trigger('stop.owl.autoplay');
+	// 	} else {
+	//     $('.owl-carousel').trigger('play.owl.autoplay');			
+	// 	}
+	// })
 });
 
 // Variable for contact form

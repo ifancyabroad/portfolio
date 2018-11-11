@@ -200,25 +200,31 @@ a, a:hover {
 }
 
 .owl-carousel .item {
-	margin: auto;
-	width: 200px;
+	margin: 6px 10px 32px;
+	padding: 12px;
+	box-shadow: 2px 2px 8px #ababab;
 }
 
-.owl-carousel .item.second {
-	position: relative;
-	left: 50%;
+.owl-carousel .item h3 {
+	text-align: center;
+	font-style: italic;
+}
+
+.item-flex {
+	display: flex;
+	align-items: center;
 }
 
 .skill-icon {
-	margin: auto;
-	width: 100px;
+	margin-right: 15px;
+	width: 25%;
 }
 
 .info {
-	text-align: center;
 	color: #737373;
 	font-size: 0.9em;
 	padding: 15px 0;
+	width: 75%;
 }
 
 .skill-name {
@@ -448,18 +454,6 @@ footer {
 }
 
 /*Responsive design*/
-@media screen and (min-width: 768px) {
-	.flip-container:hover .project {
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-	}
-	
-	.view-more {
-		display: block;
-	}
-
-}
-
 @media screen and (max-width: 768px) {
 	.description {
 		margin: auto;
