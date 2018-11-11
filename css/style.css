@@ -187,6 +187,10 @@ a, a:hover {
 	outline: none;
 }
 
+.chrome-fix {
+	width: 150px;
+}
+
 /*Call to arms arena*/
 .cta-arena, .cta-github {
 	padding-top: 30px;
