@@ -142,8 +142,26 @@ a, a:hover {
 }
 
 .title-info h2 {
-	color: #dadada;	
-	margin-bottom: 75px;
+	color: #dadada;
+	margin-bottom: 20px; 
+}
+
+.title-info span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+	50% {
+	  border-color: transparent;
+	}
+}
+
+.title-info .btn-contact {
+	position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn-contact {
