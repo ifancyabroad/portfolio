@@ -137,7 +137,7 @@ $(document).ready(function(){
 
 	// Typewriter function
   // array with texts to type in typewriter
-  var dataText = [ "Edgar Nightingale", "Front-End Web Developer."];
+  var dataText = [ "Edgar Nightingale", "Front-End Web Developer"];
 
   // array of elements to type into
   var elements = [$('.title-info h1')[0], $('.title-info h2')[0]]
