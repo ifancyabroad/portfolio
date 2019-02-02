@@ -19,7 +19,7 @@ a, a:hover {
 	font-weight: 700;
 }
 
-.projects, .skills, .about {
+.projects, .skills, .about, .arena {
 	padding-top: 80px;
 	padding-bottom: 80px;
 	overflow: hidden;
@@ -177,7 +177,7 @@ a, a:hover {
   transform: translateX(-50%);
 }
 
-.btn-contact {
+.btn-contact, .btn-arena {
 	font-size: 1.2em;
 	width: 150px;
 	padding: 10px;
@@ -189,39 +189,114 @@ a, a:hover {
 	-webkit-transition: 1s;
 }
 
-.btn-contact:hover {
+.btn-contact:hover,
+.btn-arena:hover {
 	cursor: pointer;
 	width: 200px;
 	color: white;
 	background-color: #007bff;
 }
 
-.btn-contact:focus {
+.btn-contact:focus,
+.btn-arena:focus {
 	outline: none;
 }
 
 /*Call to arms arena*/
-.cta-arena, .cta-github {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	overflow: hidden;
+.arena {
+	color: #fff;
+	background-image: -webkit-linear-gradient(330deg, #9c0e0e 50%, darkred 50%);
 }
 
-.cta-arena {
-	background-color: rgb(240, 240, 240);
+.arena .subtitle-underline {
+	background-color: #4c0000;
 }
 
-.cta-arena h3 {
-	margin: 10px;
+.arena .tagline {
+	color: #cecece;
 }
 
-.cta-arena a {
-	font-weight: 700;
-	transition: color 0.2s;
+.arena-screenshots {
+	height: 650px;
 }
 
-.cta-arena a:hover {
-	color: #7d7d7d;
+.arena-container {
+	background-size: auto 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.arena-container:nth-child(1) {
+	background-image: url('../images/arena-icon-1.png');
+	color: #fff;
+}
+
+.arena-container:nth-child(1) .arena-overlay {
+	background-color: rgba(20, 20, 20, 0.8);
+}	
+
+.arena-container:nth-child(2) {
+	background-image: url('../images/arena-icon-2.png');
+	color: #290000;
+}
+
+.arena-container:nth-child(2) .arena-overlay {
+	background-color: rgba(90, 90, 90, 0.8);
+
+}
+
+.arena-container:nth-child(3) {
+	background-image: url('../images/arena-icon-3.png');
+	color: #000;
+}
+
+.arena-container:nth-child(3) .arena-overlay {
+	background-color: rgba(200, 200, 200, 0.8);
+}
+
+.arena-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.arena-info {
+	position: relative;
+	height: 100%;
+	font-size: 1.6em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 1;
+}
+
+.arena-info p {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.arena-cta {
+	background-color: #4c0000;
+	text-align: center;
+	padding: 30px;
+	margin: 100px auto 40px;
+	width: 40%;
+	min-width: 260px;}
+
+.arena-cta h3 {
+	margin-bottom: 40px;
+}
+
+.btn-arena {
+	border: 3px solid darkred;
+}
+
+.btn-arena:hover {
+	width: 200px;
+	background-color: darkred;
 }
 
 /*Skills section*/
@@ -265,6 +340,9 @@ a, a:hover {
 
 /*Call to arms Github section*/
 .cta-github {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	overflow: hidden;
 	color: #fff;
 	background-color: #007bff;
 }
@@ -491,6 +569,10 @@ footer {
 		margin-top: 40px;
 		width: 80%;
 	}
+
+	.arena-screenshots {
+		background-size: cover;
+	}
 }
 
 @media screen and (max-width: 576px) {
@@ -516,5 +598,9 @@ footer {
 
 	.project-wrapper {
 		width: 100%;
+	}
+
+	.arena-info {
+		font-size: 1.2em;
 	}
 }
