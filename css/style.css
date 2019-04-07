@@ -179,7 +179,7 @@ a, a:hover {
 
 .btn-contact, .btn-arena {
 	font-size: 1.2em;
-	width: 150px;
+	width: 180px;
 	padding: 10px;
 	color: white;
 	background-color: rgba(40, 40, 40, 0);
@@ -192,7 +192,7 @@ a, a:hover {
 .btn-contact:hover,
 .btn-arena:hover {
 	cursor: pointer;
-	width: 200px;
+	width: 220px;
 	color: white;
 	background-color: #007bff;
 }
@@ -217,7 +217,7 @@ a, a:hover {
 }
 
 .arena-screenshots {
-	height: 650px;
+	min-height: 500px;
 }
 
 .arena-container {
@@ -227,7 +227,7 @@ a, a:hover {
 }
 
 .arena-container:nth-child(1) {
-	background-image: url('../images/arena-icon-1.png');
+	/* background-image: url('../images/arena-icon-1.png'); */
 	color: #fff;
 }
 
@@ -236,7 +236,7 @@ a, a:hover {
 }	
 
 .arena-container:nth-child(2) {
-	background-image: url('../images/arena-icon-2.png');
+	/* background-image: url('../images/arena-icon-2.png'); */
 	color: #290000;
 }
 
@@ -246,7 +246,7 @@ a, a:hover {
 }
 
 .arena-container:nth-child(3) {
-	background-image: url('../images/arena-icon-3.png');
+	/* background-image: url('../images/arena-icon-3.png'); */
 	color: #000;
 }
 
@@ -271,6 +271,8 @@ a, a:hover {
 	justify-content: center;
 	flex-direction: column;
 	z-index: 1;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .arena-info p {
@@ -279,7 +281,7 @@ a, a:hover {
 }
 
 .arena-cta {
-	background-color: #4c0000;
+	background-color: rgba(76, 0, 0, 0.8);
 	text-align: center;
 	padding: 30px;
 	margin: 100px auto 40px;
