@@ -180,27 +180,24 @@
 			background-position: center;
 	
 			&.one {
+			}
+			
+			&.two {
+			}
+			
+			&.three {
+			}
+			
+			&.four {
 				background-image: url('../images/arena.jpg');
 			}
-	
-			&.two {
-				background-image: url('../images/memory.jpg');
-			}
-	
-			&.three {
-				background-image: url('../images/map.jpg');
-			}
-	
-			&.four {
+			
+			&.five {
 				background-image: url('../images/beastiary.jpg');
 			}
-	
-			&.five {
-				background-image: url('../images/pokemon-by-type.jpg');
-			}
-	
+			
 			&.six {
-				background-image: url('../images/noughts.jpg');
+				background-image: url('../images/pokeball.png');
 			}
 		}
 	
