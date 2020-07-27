@@ -1,37 +1,4 @@
-// Call owl carousel plugin
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-  	center:true,
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:6000,
-    autoplayHoverPause:true,
-    smartSpeed:2000,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:2
-      },
-      1000:{
-        items:3
-			},
-			1400:{
-				items:4
-			}
-    }
-	})
-
-	// $('.owl-carousel').on('click', function(e) {
-	// 	console.log($('.owl-carousel').owlCarousel())
-	// 	if ($('.owl-carousel').owlCarousel.autoplay) {
-	//     $('.owl-carousel').trigger('stop.owl.autoplay');
-	// 	} else {
-	//     $('.owl-carousel').trigger('play.owl.autoplay');			
-	// 	}
-	// })
-
 
 	// Variable for contact form
 	var contactForm = $('#contact');
@@ -113,26 +80,6 @@ $(document).ready(function(){
 	        $('nav').removeClass('navbar-style');
 	        $('.navbar-details').css('opacity', '0');
 	    }
-	});
-
-	// Set margins of the navbar for small screens
-	function setNavBar() {
-		if ($(window).width() < 576) {
-			$('.nav-item').removeClass('ml-3');
-			$('.navbar-nav').removeClass('ml-auto mr-5');
-			$('.navbar-nav').addClass('ml-5');
-		}
-		else {
-			$('.navbar-nav').removeClass('ml-5');
-			$('.navbar-nav').addClass('ml-auto mr-5');
-			$('.nav-item').addClass('ml-3');
-		}
-	};
-
-	setNavBar()
-
-	$(window).resize(function() {
-		setNavBar();
 	});
 
 	// Typewriter function

@@ -1,1 +1,37 @@
 // Override Bootstrap built-in custom variables
+$primary: #11224b;
+$secondary: #02024d;
+$success: #04a04a;
+$info: #17a2b8;
+$warning: #f9ed6c;
+$danger: #b90002;
+$light: #eaeaea;
+$dark: #242424;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+$body-bg: #fff;
+$body-color: $dark;
+
+$font-family-sans-serif: Montserrat, sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1rem;
+
+$line-height-base: 1.75;
+
+$headings-font-family: Montserrat, sans-serif;
+
+$link-hover-decoration: none;
+
+$paragraph-margin-bottom: 0;
+
+$input-btn-border-width: 2px;

@@ -1,589 +1,76 @@
-/*Set all margins and padding to 0*/
-* {
-	padding: 0;
-	margin: 0;
-}
-
-/*Default font and styles for the body*/
-body {
-	font-family: Roboto, sans-serif;
-	font-weight: 300;
-}
-
-a, a:hover {
-	text-decoration: none !important;
-	color: inherit;
-}
-
-.bold {
-	font-weight: 700;
-}
-
-.projects, .skills, .about, .arena {
-	padding-top: 80px;
-	padding-bottom: 80px;
+.profile, .skills, .projects, .about {
+	padding-top: 100px;
+	padding-bottom: 100px;
 	overflow: hidden;
-}
-
-/*Subtitle areas*/
-.subtitle {
-	font-size: 2.6em;
-	font-weight: 700;
-}
-
-.subtitle-underline {
-	background-color: #007bff;
-	height: 2px;
-	width: 80px;
-	margin: auto;
-}
-
-.subtitle-box {
-	text-align: center;
-	padding-bottom: 80px;
-}
-
-.projects .subtitle-box {
-	padding-bottom: 0;
-}
-
-.tagline {
-	font-size: 1.4em;
-	margin-top: 20px;
-	color: #737373;
-}
-
-/*Title section*/
-.jumbotron {
-	background-attachment: fixed;
-	background-image: url('../images/title-background.jpg');
-	background-position: center top;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: #0f0f0f;
-	color: #fff;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-}
-
-.title {
-	position: relative;
-	background-color: rgba(40, 40, 40, 0.8);
-	height: 100vh;
-}
-
-.logo {
-	width: 50px;
-}
-
-.navbar-details {
-	opacity: 0;
-	transition: opacity 1s;
-}
-
-.navbar-name {
-	color: white;
-	margin: 0;
-}
-
-.navbar-title {
-	color: #bababa;
-	margin: 0;
-	font-size: 0.9em;
-}
-
-.navbar {
-	transition: 1s;
-}
-
-.navbar-style {
-	background-color: rgba(15, 15, 15, 0.8);
-}
-
-.nav-link {
-	position: relative;
-}
-
-.underline {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	background-color: #007bff;
-	height: 2px;
-	width: 0;
-	transition: width 1s;
-	-webkit-transition: width 1s;
-}
-
-.navbar a {
-	transition: 1s;
-	-webkit-transition: 1s;
-	color: #dadada;
-}
-
-.navbar a:hover {
-	color: white;
-}
-
-.nav-link:hover .underline {
-	width: 100%;
-}
-
-.title-info {
-	position: absolute;
-	width: 100%;
-	top: 25%;
-	left: 0;
-}
-
-.title-info h1 {
-	font-size: 3.2em;
-	font-weight: 700;
-}
-
-.title-info h2 {
-	color: #dadada;
-	margin-bottom: 20px; 
-}
-
-@media screen and (min-width: 1024px) {
-	.title-info h1 {
-		font-size: 5.2em;
-	}
-
-	.title-info h2 {
-		font-size: 3em;
-	}
-}
-
-.title-info span {
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
-}
-
-@keyframes caret {
-	50% {
-	  border-color: transparent;
-	}
-}
-
-.title .btn-contact {
-	position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.btn-contact, .btn-arena {
-	font-size: 1.2em;
-	width: 180px;
-	padding: 10px;
-	color: white;
-	background-color: rgba(40, 40, 40, 0);
-	border: 3px solid #007bff;
-	border-radius: 30px;
-	transition: 1s;
-	-webkit-transition: 1s;
-}
-
-.btn-contact:hover,
-.btn-arena:hover {
-	cursor: pointer;
-	width: 220px;
-	color: white;
-	background-color: #007bff;
-}
-
-.btn-contact:focus,
-.btn-arena:focus {
 	outline: none;
 }
 
-/*Call to arms arena*/
-.arena {
-	color: #fff;
-	background-image: -webkit-linear-gradient(330deg, #9c0e0e 50%, darkred 50%);
-}
-
-.arena .subtitle-underline {
-	background-color: #4c0000;
-}
-
-.arena .tagline {
-	color: #cecece;
-}
-
-.arena-screenshots {
-	min-height: 500px;
-}
-
-.arena-container {
-	background-size: auto 75%;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.arena-container:nth-child(1) {
-	/* background-image: url('../images/arena-icon-1.png'); */
-	color: #fff;
-}
-
-.arena-container:nth-child(1) .arena-overlay {
-	background-color: rgba(20, 20, 20, 0.8);
-}	
-
-.arena-container:nth-child(2) {
-	/* background-image: url('../images/arena-icon-2.png'); */
-	color: #290000;
-}
-
-.arena-container:nth-child(2) .arena-overlay {
-	background-color: rgba(90, 90, 90, 0.8);
-
-}
-
-.arena-container:nth-child(3) {
-	/* background-image: url('../images/arena-icon-3.png'); */
-	color: #000;
-}
-
-.arena-container:nth-child(3) .arena-overlay {
-	background-color: rgba(200, 200, 200, 0.8);
-}
-
-.arena-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
-.arena-info {
-	position: relative;
-	height: 100%;
-	font-size: 1.6em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	z-index: 1;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.arena-info p {
+// Subtitle
+.subtitle-box {
 	text-align: center;
-	margin-top: 40px;
-}
-
-.arena-cta {
-	background-color: rgba(76, 0, 0, 0.8);
-	text-align: center;
-	padding: 30px;
-	margin: 100px auto 40px;
-	width: 40%;
-	min-width: 260px;}
-
-.arena-cta h3 {
-	margin-bottom: 40px;
-}
-
-.btn-arena {
-	border: 3px solid darkred;
-}
-
-.btn-arena:hover {
-	width: 200px;
-	background-color: darkred;
-}
-
-/*Skills section*/
-.owl-carousel .owl-stage {
-  display: flex;
-  align-items: center;
-}
-
-.owl-carousel .item {
-	margin: 6px 10px 32px;
-	padding: 12px;
-	box-shadow: 2px 2px 8px #ababab;
-}
-
-.owl-carousel .item h3 {
-	text-align: center;
-	font-style: italic;
-}
-
-.item-flex {
-	display: flex;
-	align-items: center;
-}
-
-.skill-icon {
-	margin-right: 15px;
-	width: 25%;
-}
-
-.info {
-	color: #737373;
-	font-size: 0.9em;
-	padding: 15px 0;
-	width: 75%;
-}
-
-.skill-name {
-	font-weight: 700;
-	color: black;
-}
-
-/*Call to arms Github section*/
-.cta-github {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	overflow: hidden;
-	color: #fff;
-	background-color: #007bff;
-}
-
-.cta-github h3 {
-	margin: 10px;
-}
-
-.cta-github a {
-	color: #dadada;
-	font-weight: 700;
-	transition: color 0.2s;
-}
-
-.cta-github a:hover {
-	color: #fff;
-}
-
-/*Projects section*/
-.projects {
-	background-color: rgb(240, 240, 240);
-}
-
-.projects-box {
-	color: white;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.project-wrapper {
-	text-align: center;
-	position: relative;
-	width: 33.33%;
-  width: calc(100% / 3);
-	height: 300px;
-	overflow: hidden;
-}
-
-.project-background {
-	width: 100%;
-	height: 100%;
-	transition: transform 0.3s;
-	background-size: cover;
-	background-position: center;
-}
-
-.project-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
-.project-wrapper:nth-child(1) .project-background {
-	background-image: url('../images/arena.jpg');
-}
-
-.project-wrapper:nth-child(1) .project-overlay {
-	background-color: rgba(0, 0, 100, 0.8);
-}
-
-.project-wrapper:nth-child(2) .project-background {
-	background-image: url('../images/memory.jpg');
-}
-
-.project-wrapper:nth-child(2) .project-overlay {
-	background-color: rgba(0, 100, 0, 0.8);
-}
-
-.project-wrapper:nth-child(3) .project-background {
-	background-image: url('../images/map.jpg');
-}
-
-.project-wrapper:nth-child(3) .project-overlay {
-	background-color: rgba(100, 0, 0, 0.8);
-}
-
-.project-wrapper:nth-child(4) .project-background {
-	background-image: url('../images/beastiary.jpg');
-}
-
-.project-wrapper:nth-child(4) .project-overlay {
-	background-color: rgba(0, 50, 50, 0.8);
-}
-
-.project-wrapper:nth-child(5) .project-background {
-	background-image: url('../images/pokemon-by-type.jpg');
-}
-
-.project-wrapper:nth-child(5) .project-overlay {
-	background-color: rgba(50, 0, 50, 0.8);
-}
-
-.project-wrapper:nth-child(6) .project-background {
-	background-image: url('../images/noughts.jpg');
-}
-
-.project-wrapper:nth-child(6) .project-overlay {
-	background-color: rgba(50, 50, 0, 0.8);
-}
-
-.project-wrapper h2, .project-wrapper p {
-	width: 95%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-}
-
-.project-wrapper h2 {
-	transform: translate(-50%, -50%);
-	transition: transform 0.8s;
-}
-
-.project-wrapper p {
-	transform: translate(-50%, 20%) scale(0);
-	transition: transform 0.4s;
-}
-
-.project-wrapper:hover h2 {
-	transform: translate(-50%, -120%);
-}
-
-.project-wrapper:hover p {
-	transform: translate(-50%, 20%) scale(1);
-}
-
-.project-wrapper:hover .project-background {
-	transform: scale(1.2);
-}
-
-/*About section*/
-.about .subtitle {
-	color: #fff;
-}
-
-.arrow-row {
-	color: #fff;
-	background-color: #007bff;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.arrow-icon:hover {
-	color: inherit;
-}
-
-footer {
-	color: #fff;
-	background-color: #0f0f0f;
-}
-
-.profile-picture {
-	border: 2px solid #4b4b4b;
-	width: 80%;
-	max-width: 200px;
-	margin: auto;
-}
-
-.about {
-	background-image: url('../images/about-background.jpg');
-	background-attachment: fixed;
-	background-position: center top;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-}
-
-.about-overlay {
-	background-color: rgba(27, 27, 27, 0.9);
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
-.about .row {
-	position: relative;
-	z-index: 1;
-}
-
-.about p {
-	color: #cacaca;
-}
-
-.service {
-	display: flex;
-	align-items: center;
-	margin-bottom: 15px;
-	color: #007bff;
-}
-
-.service p {
-	margin-bottom: 0;
-	margin-left: 10px;
-}
-
-.bottom-contact {
-	margin-top: 80px;
-	margin-bottom: 40px;
-}
-
-.social-media {
-	transition: color 0.2s;
-	-webkit-transition: color 0.2s;
-}
-
-.social-media:hover {
-	color: white;
-}
-
-.signature {
-	margin-top: 20px;
-	font-size: 0.8em;
-	text-align: center;
-}
-
-/*Responsive design*/
-@media screen and (max-width: 768px) {
-	.description {
+	padding-bottom: 80px;
+	
+	.subtitle-underline {
+		background-color: $primary;
+		height: 2px;
+		width: 80px;
 		margin: auto;
-		margin-top: 40px;
-		width: 80%;
-	}
-
-	.arena-screenshots {
-		background-size: cover;
 	}
 }
 
+// Navbar
+.navbar {
+	transition: 0.4s;
+
+	.navbar-details {
+		opacity: 0;
+		transition: opacity 1s;
+
+		.navbar-name {
+			color: white;
+		}
+		
+		.navbar-title {
+			color: #bababa;
+			font-size: 0.9em;
+		}
+	}
+
+	.nav-link {
+		position: relative;
+		transition: 1s;
+		-webkit-transition: 1s;
+	}
+
+	.nav-link:hover .underline {
+		width: 100%;
+	}
+
+	.underline {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		background-color: $primary;
+		height: 2px;
+		width: 0;
+		transition: width 1s;
+		-webkit-transition: width 1s;
+	}
+
+	&.navbar-style {
+		background-color: change-color($primary, $alpha: 0.8);
+
+		.nav-link {
+			color: #fff;
+		}
+	}
+}
+
+
+// Mobile menu
 @media screen and (max-width: 576px) {
-	.about-list {
-		margin: auto;
-		margin-top: 40px;
-		width: 80%;
-	}
-
 	.underline {
 		left: 0;
 		transform: initial;
@@ -597,12 +84,177 @@ footer {
 	.navbar-details {
 		display: none;
 	}
+}
 
-	.project-wrapper {
-		width: 100%;
+// Jumbotron
+.jumbotron {
+	text-align: center;
+	height: 100vh;
+
+	.title {
+		padding-top: 72px;
+
+		.title-info {
+			height: 120px;
+			margin-bottom: 36px;
+		
+			h1 {
+				font-size: 3.2em;
+				font-weight: 700;	
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 991px) {
+
+	.title-info {
+
+		span {
+			border-right: .05em solid;
+			animation: caret 1s steps(1) infinite;
+		}
+	}
+}
+
+
+@keyframes caret {
+	50% {
+	  border-color: transparent;
+	}
+}
+
+// Profile
+.profile {
+	padding-bottom: 250px;
+}
+
+// Skills
+.skills {
+	padding-top: 0;
+	margin-top: -140px;
+
+	ul {
+		list-style: none;
+		padding-left: 0;
 	}
 
-	.arena-info {
-		font-size: 1.2em;
+	.cta {
+		margin-top: 100px;
+	}
+}
+
+// Projects
+.projects {
+
+	.project-wrapper {
+		text-align: center;
+		position: relative;
+		height: 300px;
+		overflow: hidden;
+		margin-bottom: 30px;
+		border-radius: 16px;
+
+		.project-background {
+			width: 100%;
+			height: 100%;
+			transition: transform 0.3s;
+			background-size: cover;
+			background-position: center;
+	
+			&.one {
+				background-image: url('../images/arena.jpg');
+			}
+	
+			&.two {
+				background-image: url('../images/memory.jpg');
+			}
+	
+			&.three {
+				background-image: url('../images/map.jpg');
+			}
+	
+			&.four {
+				background-image: url('../images/beastiary.jpg');
+			}
+	
+			&.five {
+				background-image: url('../images/pokemon-by-type.jpg');
+			}
+	
+			&.six {
+				background-image: url('../images/noughts.jpg');
+			}
+		}
+	
+		.project-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: change-color($primary, $alpha: 0.8);;
+		}
+
+		h2, p {
+			color: #fff;
+			width: 95%;
+			position: absolute;
+			top: 50%;
+			left: 50%;		
+		}
+
+		h2 {
+			transform: translate(-50%, -50%);
+			transition: transform 0.8s;
+		}
+
+		p {
+			transform: translate(-50%, 20%) scale(0);
+			transition: transform 0.4s;
+		}
+	}
+
+	.project-wrapper:hover {
+
+		h2 {
+			transform: translate(-50%, -120%);
+		}
+
+		p {
+			transform: translate(-50%, 20%) scale(1);
+		}
+
+		.project-background {
+			transform: scale(1.2);
+		}
+	}
+}
+
+// About
+footer {
+
+	.social-media {
+		position: relative;
+		color: #fff;
+		height: 40px;
+		width: 40px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		transition: 0.2s;
+
+		.centered {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.social-media:hover {
+		color: $primary;
+		background-color: #fff;
+		border-color: $primary;
 	}
 }
