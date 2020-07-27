@@ -88,40 +88,56 @@
 
 // Jumbotron
 .jumbotron {
+	// padding: 6rem 2rem;
 	text-align: center;
 	height: 100vh;
 
-	.title {
-		padding-top: 72px;
-
-		.title-info {
-			height: 120px;
-			margin-bottom: 36px;
-		
-			h1 {
-				font-size: 3.2em;
-				font-weight: 700;	
-			}
-		}
-	}
-}
-
-
-@media screen and (min-width: 991px) {
-
 	.title-info {
+		height: 120px;
+		margin-bottom: 60px;
+	
+		h1 {
+			font-size: 3.2em;
+			font-weight: 700;	
+		}
 
 		span {
 			border-right: .05em solid;
 			animation: caret 1s steps(1) infinite;
 		}
 	}
-}
 
+	.title-image {
+		margin-bottom: 60px;
+	}
+}
 
 @keyframes caret {
 	50% {
 	  border-color: transparent;
+	}
+}
+
+
+@media screen and (max-width: 575px) {
+
+	.jumbotron {
+
+		.title-info {
+			height: 80px;
+
+			h1 {
+				font-size: 2rem;;
+			}
+
+			h2 {
+				font-size: 1.4rem;
+			}
+		}
+
+		.title-image {
+			max-width: 300px;
+		}
 	}
 }
 
@@ -234,6 +250,11 @@
 
 // About
 footer {
+
+	.tag {
+		margin: auto;
+		max-width: 400px;
+	}
 
 	.social-media {
 		position: relative;
