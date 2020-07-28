@@ -37,6 +37,7 @@
 	}
 
 	.nav-link {
+		cursor: pointer;
 		position: relative;
 		transition: 1s;
 		-webkit-transition: 1s;
@@ -191,12 +192,15 @@
 			background-position: center;
 	
 			&.one {
+				background-image: url('../images/sky.jpg');
 			}
 			
 			&.two {
+				background-image: url('../images/vasby.jpg');
 			}
 			
 			&.three {
+				background-image: url('../images/w2gw.jpg');
 			}
 			
 			&.four {
