@@ -61,10 +61,6 @@
 
 	&.navbar-style {
 		background-color: change-color($primary, $alpha: 0.8);
-
-		.nav-link {
-			color: #fff;
-		}
 	}
 }
 
@@ -151,6 +147,10 @@
 	padding-top: 0;
 	margin-top: -140px;
 
+	.skill-border {
+		border-bottom: 1px solid $border-color;
+	}
+
 	ul {
 		list-style: none;
 		padding-left: 0;
@@ -158,6 +158,17 @@
 
 	.cta {
 		margin-top: 100px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.skills {
+
+		.skill-border {
+			border-bottom: none;
+			border-right: 1px solid $border-color;
+		}
 	}
 }
 

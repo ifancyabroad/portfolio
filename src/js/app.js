@@ -72,15 +72,20 @@ $(document).ready(function(){
 	});
 
 	// Apply background and show name/title details on navbar once scrolled away from the top
-	$(window).bind('scroll', function () {
-	    if ($(window).scrollTop() > 50) {
-	        $('nav').addClass('navbar-style');
-	        $('.navbar-details').css('opacity', '1');
-	    } else {
-	        $('nav').removeClass('navbar-style');
-	        $('.navbar-details').css('opacity', '0');
-	    }
-	});
+	function setNavbarColor() {
+		if ($(window).scrollTop() > 50) {
+			$('nav').removeClass('navbar-light');
+			$('nav').addClass('navbar-dark navbar-style');
+			$('.navbar-details').css('opacity', '1');
+		} else {
+			$('nav').removeClass('navbar-dark navbar-style');
+			$('nav').addClass('navbar-light');
+			$('.navbar-details').css('opacity', '0');
+		}
+	}
+
+	setNavbarColor();
+	$(window).bind('scroll', setNavbarColor);
 
 	// Typewriter function
   // array with texts to type in typewriter
